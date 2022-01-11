@@ -1,4 +1,10 @@
-export * from "./ticker.ts";
+export { fetchTicker } from "./ticker.ts";
+export type { TickerOptions, TickerResponse } from "./ticker.ts";
 export * from "./ticker_hour.ts";
 export { ALL_BITSTAMP_PAIRS } from "./constants.ts";
 export * from "./types.ts";
+export * from "./order_book.ts";
+export * from "./pairs.ts";
+export * from "./ohlc.ts";
+export * from "./eur_usd.ts";
+export * from "./transaction.ts";

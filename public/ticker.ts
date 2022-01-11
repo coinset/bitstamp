@@ -1,9 +1,10 @@
 import { jsonFetch, Reviver } from "./_utils.ts";
 import { BASE_URL } from "./constants.ts";
 import { isString } from "../deps.ts";
+import type { BitstampPair } from "./types.ts";
 
 export type TickerOptions = {
-  pair: string;
+  pair: BitstampPair;
 };
 
 export type TickerResponse = {
@@ -38,3 +39,5 @@ export function fetchTicker(
     parseJson: reviver,
   });
 }
+
+export { reviver };
